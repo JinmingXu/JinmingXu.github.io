@@ -19,7 +19,6 @@
 <div class="menu-item"><a href="projects.html" class="current">Projects</a></div>
 <div class="menu-category">Miscellaneous</div>
 <div class="menu-item"><a href="usefulinks.html">UsefuLinks</a></div>
-<div class="menu-item"><a href="photos.html">Photos</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
@@ -28,29 +27,40 @@
 <h2>Distributed Optimization for Large-Scale Data Processing</h2>
 <div class="infoblock">
 <div class="blockcontent">
-<p>This project aims to develop distributed algorithms for large-scale statistical signal processing and machine learning problems. Most existing distributed algorithms usually require a perfect synchronization mechanism and decaying stepsize for achieving the exact optimum, restricting it from being asynchronously implemented and resulting in slower convergence rates. In addition, the assumption of the boundedness of (sub)gradient is often made for convergence analysis, which is quite restrictive in unconstrained problems. To overcome these issues, in this project, we developed two novel distributed algorithms both of which involve an extra step of consensus in each iteration and can be thus regarded as augmented versions of existing conterparts. Both algorithms, namely <i>Distributed Forward-Backward Bregman Splitting</i> (D-FBBS) and <i>Augmented Distributed Gradient Method</i> (AugDGM), are able to converge to the exact optimum even with constant stepsize over stochastic (even asynchronous) networks without the assumption of boundedness of (sub)gradient and achieves the best known convergence rates in the existing literature.</p>
+<p>This project aims to develop distributed algorithms for large-scale statistical signal processing and machine learning problems. Most existing distributed algorithms usually require a perfect synchronization mechanism and decaying stepsize for achieving the exact optimum, restricting it from being asynchronously implemented and resulting in slower convergence rates. In addition, the assumption of the boundedness of (sub)gradient is often made for convergence analysis, which is quite restrictive in unconstrained problems. To overcome these issues, in this project, we developed two novel distributed algorithms both of which involve an extra step of consensus in each iteration and can be thus regarded as augmented versions of existing counterparts. Both algorithms, namely <i>Distributed Forward-Backward Bregman Splitting</i> (D-FBBS) and <i>Augmented Distributed Gradient Method</i> (AugDGM), are able to converge to the exact optimum even with constant stepsize over stochastic (even asynchronous) networks without the assumption of boundedness of (sub)gradient and achieves the best known convergence rates in the existing literature.</p>
 <p><b>Related Papers</b>:</p>
 <ul>
-<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie,“<i>Convergence of Asynchronous Distributed Gradient Methods over Stochastic Networks</i>,”  IEEE Transactions on Automatic Control (Regular).</p>
+<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie,“<i>Convergence of Asynchronous Distributed Gradient Methods over Stochastic Networks</i>,” <b>IEEE Transactions on Automatic Control (Regular)</b>, vol. 63, no. 2, pp. 434-448, 2018. [<a href="https://www.researchgate.net/publication/318612732_Convergence_of_Asynchronous_Distributed_Gradient_Methods_over_Stochastic_Networks">pdf</a>]<br /></p>
 </li>
-<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Bregman Splitting Scheme for Distributed Optimization Problems over Networks</i>,” conditionally accepted by IEEE Transactions on Automatic Control.</p>
+<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i></i>A Bregman Splitting Scheme for Distributed Optimization Problems over Networks<i></i>,” <b>IEEE Transactions on Automatic Control (Regular)</b>, vol. 63, no. 11, pp. 3809-3824, 2018. [<a href="https://arxiv.org/pdf/1608.08031.pdf">pdf</a>]<br /></p>
 </li>
-</ul>
-<ul>
 <li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Forward-Backward Bregman Splitting Scheme for Regularized Distributed Optimization Problems</i>,” In Proceedings of 55th IEEE Conference on Decision and Control (CDC), 2016.</p>
 </li>
 <li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>Augmented Distributed Gradient Methods for Multi-agent Optimization under Uncoordinated Constant Stepsizes</i>,” In Proceedings of 54th IEEE Conference on Decision and Control (CDC), 2015.</p>
 </li>
 </ul>
 </div></div>
-<h2>Distributed Optimization for Networked Dynamic Systems</h2>
+<h2>Complexity Bounds for Distributed Optimization Algorithms</h2>
 <div class="infoblock">
 <div class="blockcontent">
-<p>This project aims to develop distributed control schemes for large-scale networked dynamic systems. In this project, we proposed a novel distributed simultaneous perturbation approach (D-SPA) to achieve coordinated control of systems based on simultaneous perturbation techniques as well as con-
-sensus strategies. The proposed method is model-free and requires little knowledge on the coupling structure of the problem to be optimized. Using singular perturbation and averaging theory, we show that the proposed scheme is able to converge to the neighborhood of the Pareto optimum of the problem so long as the energy of perturbation signals is sufficiently small. To illustrate its effectiveness, we applied the proposed approach to asimulated offshore wind farm for energy maximization and make a comprehensive comparison with the existing state-of-the-art technique. We also extended this approach to account for (unknown) constraints imposed on the system, yielding a distributed primal-dual simultaneous perturbation approach.</p>
+<p>This project aims to investigate the fundamental computational and communicational complexity bounds of distributed optimization algorithms. In this project, we provide a lower bound for a class of first-order distributed optimization algorithms for smooth functions that allow for multiple communication and computation steps at each iteration, and a corresponding &ldquo;optimal&rdquo; algorithm, termed OPTRA, that matches this lower bound. For the case where the cost functions are also strongly convex, we provide a theoretical guarantee for the number of inner loops of communications needed for the distributed optimization algorithm to achieve the performance of the centralized counterpart, leading to linear speedup in terms of overall iterations.  </p>
 <p><b>Related Papers</b>:</p>
 <ul>
-<li><p><b>Jinming Xu</b> and Yeng Chai Soh, “<i>A Distributed Simultaneous Perturbation Approach for Large-scale Dynamic Optimization Problems</i>,” Automatica 72 (2016): 194-204 (Regular).</p>
+<li><p><b>Jinming Xu</b>, Ye Tian,  Ying Sun and Gesualdo Scutari, “<i>Distributed Algorithms for Composite Optimization: Unified and Tight Convergence Analysis</i>,” preprint; online available: [<a href="https://arxiv.org/abs/2002.11534">pdf</a>]<br /></p>
+</li>
+<li><p><b>Jinming Xu</b>, Ye Tian, Gesualdo Scutari and Ying Sun,“<i>Optimal Primal-Dual Algorithms for Distributed Optimization over Networks</i>,” <b>AISTATS</b> 2020. online available: [<a href="http://arxiv.org/abs/1910.10666">pdf</a>]<br /></p>
+</li>
+<li><p><b>Jinming Xu</b>, Ying Sun, Ye Tian and Gesualdo Scutari,“<i>A Unified Contraction Analysis of a Class of Distributed Algorithms for Composite Optimization</i>,” IEEE 8th International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP), 2019.<br /></p>
+</li>
+</ul>
+</div></div>
+<h2>Distributed Optimization for Networked Dynamical Systems</h2>
+<div class="infoblock">
+<div class="blockcontent">
+<p>This project aims to develop distributed control schemes for large-scale networked dynamic systems. In this project, we proposed a novel distributed simultaneous perturbation approach (D-SPA) to achieve coordinated control of systems based on simultaneous perturbation techniques as well as consensus strategies. The proposed method is model-free and requires little knowledge on the coupling structure of the problem to be optimized. Using singular perturbation and averaging theory, we show that the proposed scheme is able to converge to the neighborhood of the Pareto optimum of the problem so long as the energy of perturbation signals is sufficiently small. To illustrate its effectiveness, we applied the proposed approach to a simulated offshore wind farm for energy maximization and make a comprehensive comparison with the existing state-of-the-art technique. We also extended this approach to account for (unknown) constraints imposed on the system, yielding a distributed primal-dual simultaneous perturbation approach.</p>
+<p><b>Related Papers</b>:</p>
+<ul>
+<li><p><b>Jinming Xu</b> and Yeng Chai Soh, “<i>A Distributed Simultaneous Perturbation Approach for Large-scale Dynamic Optimization Problems</i>,” <b>Automatica (Regular)</b> 72 (2016): 194-204. [<a href="https://www.dropbox.com/s/imcjpyfs4pb22r2/auto16_dspa.pdf?dl=0">pdf</a>]<br /></p>
 </li>
 </ul>
 <ul>
@@ -61,12 +71,12 @@ sensus strategies. The proposed method is model-free and requires little knowled
 <h2>Distributed Optimization for Resource Allocation</h2>
 <div class="infoblock">
 <div class="blockcontent">
-<p>This project aims to develop efficient distributed algorrithms for general <i>composite</i> resource allocation problems over networks, which arise from many application areas such as economic dispatch, demand response and network utility maximization. Conventionally, we have to resort to centralized or parallel approaches to solve these problems. It is well known that distributed solutions are more preferable due to their robustness to component failures and great scalability to the size of the network. Thus, we attempt to solve the resource allocation problem from its dual conterpart, which, together with certain splitting techniques, leads to a novel distributed algorithm that is able to solve the above primal problem not only in a distributed manner but also with a fast convergence rate.</p>
+<p>This project aims to develop efficient distributed algorithms for general <i>composite</i> resource allocation problems over networks, which arise from many application areas such as economic dispatch, demand response and network utility maximization. Conventionally, we have to resort to centralized or parallel approaches to solve these problems. It is well known that distributed solutions are more preferable due to their robustness to component failures and great scalability to the size of the network. Thus, we attempt to solve the resource allocation problem from its dual counterpart, which, together with certain splitting techniques, leads to a novel distributed algorithm that is able to solve the above primal problem not only in a distributed manner but also with a fast convergence rate.</p>
 <p><b>Related Papers</b>:</p>
 <ul>
-<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Dual Splitting Algorithm for Distributed Resource Allocation Problems</i>,” In Proceedings of 56th IEEE Conference on Decision and Control (CDC), to apear, 2017.</p>
+<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Dual Splitting Approach for Distributed Resource Allocation with Regularization</i>,” <b>IEEE Transactions on Control of Network Systems</b>, vol. 6, no. 1: 403-414, 2019. [<a href="https://www.researchgate.net/publication/324997113_A_Dual_Splitting_Approach_for_Distributed_Resource_Allocation_with_Regularization">pdf</a>]<br /></p>
 </li>
-<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Dual Splitting Approach for Distributed Resource Allocation with Regularization</i>,” submitted.</p>
+<li><p><b>Jinming Xu</b>, Shanying Zhu, Yeng Chai Soh and Lihua Xie, “<i>A Dual Splitting Algorithm for Distributed Resource Allocation Problems</i>,” In Proceedings of 56th IEEE Conference on Decision and Control (CDC), to apear, 2017.</p>
 </li>
 </ul>
 </div></div>
@@ -76,7 +86,7 @@ sensus strategies. The proposed method is model-free and requires little knowled
 </div></div>
 <div id="footer">
 <div id="footer-text">
-Page generated 2017-10-19 11:25:02 MST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2020-04-22 20:53:23 China Standard Time, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
